@@ -14,8 +14,7 @@
 标题# + 空格 + 标题名称 一级标题
 ## + 空格 + 标题名称 二级标题
 …
-###### + 空格 + 标题名称 六级标题
-段落 &amp;">
+###### + 空格 + 标题名称 六级标题">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习markdown语法">
 <meta property="og:url" content="http://windzz.github.io/2017/03/30/learn-markdown-syntax/index.html">
@@ -26,10 +25,9 @@
 标题# + 空格 + 标题名称 一级标题
 ## + 空格 + 标题名称 二级标题
 …
-###### + 空格 + 标题名称 六级标题
-段落 &amp;">
+###### + 空格 + 标题名称 六级标题">
 <meta property="og:image" content="http://windzz.github.io/assets/blogImg/John_Gruber.jpg">
-<meta property="og:updated_time" content="2017-03-30T10:23:57.000Z">
+<meta property="og:updated_time" content="2017-03-30T10:36:05.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="学习markdown语法">
 <meta name="twitter:description" content="Markdown是一种轻量级的写作语法, 简洁、高效的语法可以让写作的文章错落有致、简单大方。在此我们特别感谢Markdown的创始人约翰·格鲁伯提供的使写作爱好者事半功倍的工具。
@@ -38,8 +36,7 @@
 标题# + 空格 + 标题名称 一级标题
 ## + 空格 + 标题名称 二级标题
 …
-###### + 空格 + 标题名称 六级标题
-段落 &amp;">
+###### + 空格 + 标题名称 六级标题">
 <meta name="twitter:image" content="http://windzz.github.io/assets/blogImg/John_Gruber.jpg">
   
   
@@ -201,7 +198,7 @@ var _hmt = _hmt || [];
 <h1 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h1><p># + <code>空格</code> + 标题名称 一级标题</p>
 <p>## + <code>空格</code> + 标题名称 二级标题</p>
 <p>…</p>
-<p>###### + <code>空格</code> + 标题名称 六级标题</p>
+<p>###### + <code>空格</code> + 标题名称 六级标题<br><a id="more"></a></p>
 <h1 id="段落-amp-换行"><a href="#段落-amp-换行" class="headerlink" title="段落 &amp; 换行"></a>段落 &amp; 换行</h1><p><code>段落</code>就是一行或多行的语句组成的文字片段,段落与段落的区分是之间存在空行。<br><code>空行</code>就是空白的一行。<code>&lt;br/&gt;</code>也可以换行,顺便提一句markdown兼容html, 即html标签可以穿插在markdown的写作中。</p>
 <p><strong>示例:</strong><br><code>我是第一个段落</code><br>儿子中考考试考差了，被老婆骂了一顿。<br>我去安慰儿子：“你要努力学习，以后一定要超越爸爸。”<br>儿子愣了一下，弱弱来了一句：“别的我不敢保证。但是，以后找个比你好的老婆还是很有把握的。”‍‍‍‍</p>
 <p><code>我是第二个段落</code><br>甲：“手机斗地主一直输，是什么原因让你坚持下去的？”<br>乙：“因为队友一直鼓励我。”<br>甲：“怎么鼓励的？”<br>乙：“你的牌打的也忒好了！”<br>甲：“……”‍‍</p>
@@ -241,12 +238,19 @@ var _hmt = _hmt || [];
 <p><strong>示例:</strong><br><del>坐地铁，旁边坐着一年轻漂亮妈妈抱着一三岁的小正太。过了一会，可能饿了，一直缠着要吃奶。妈妈说：“这么大了还吃奶？”孩子一边喊一边扒妈妈的领口，妈妈拿手挡住胸口，小正太折腾了半天没办法。突然冲着我喊：“叔叔帮我扒下，我们一人一个。”你们说我该不该帮他一下呢!</del></p>
 <h1 id="代码高亮块"><a href="#代码高亮块" class="headerlink" title="代码高亮块"></a>代码高亮块</h1><p>```语言<br>代码块<br>```<br>进行代码高亮</p>
 <p><strong>示例:</strong><br><figure class="highlight php"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="meta">&lt;?php</span></div><div class="line"><span class="keyword">echo</span> <span class="string">'PHP是世界上最好的语言'</span>;</div></pre></td></tr></table></figure></p>
-<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><p>> + 引用话术 表示引用<br>> > 引用可以嵌套使用</p>
+<h1 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h1><h3 id="正常引用"><a href="#正常引用" class="headerlink" title="正常引用"></a>正常引用</h3><p>> + 引用话术 表示引用 引用需要以一个空白行结束</p>
+<p><strong>示例</strong></p>
+<blockquote>
+<p>森屿暖树 墒以光年</p>
+</blockquote>
+<h3 id="嵌套引用"><a href="#嵌套引用" class="headerlink" title="嵌套引用"></a>嵌套引用</h3><p>> > </p>
+<p>> 引用可以嵌套使用，嵌套结束后需要已单独空一行表示嵌套结束</p>
 <p><strong>示例</strong></p>
 <blockquote>
 <blockquote>
-<p>这里是嵌套引用<br>我是外围引用</p>
+<p>这里是嵌套引用</p>
 </blockquote>
+<p>我是外围引用</p>
 </blockquote>
 
       
@@ -458,7 +462,15 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+                <a href="javascript:void(0)" class="js-tag color3">github pages</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color2">jekyll</a>
               </li>
              
               <li class="article-tag-list-item">
@@ -474,15 +486,7 @@ MathJax.Hub.Queue(function() {
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">github pages</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">hexo</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color2">jekyll</a>
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
               </li>
             
             <div class="clearfix"></div>
