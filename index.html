@@ -169,71 +169,7 @@ var _hmt = _hmt || [];
     
     <div class="article-entry" itemprop="articleBody">
       
-        <!-- toc -->
-<ul>
-<li><a href="#引子">引子</a></li>
-<li><a href="#why-hexo">Why hexo ?</a><ul>
-<li><a href="#区别">区别</a><ul>
-<li><a href="#jekyllhttpsjekyllrbcom">Jekyll</a></li>
-<li><a href="#hexohttpshexoio">Hexo</a></li>
-</ul>
-</li>
-<li><a href="#主题推荐">主题推荐</a></li>
-</ul>
-</li>
-<li><a href="#搭建流程">搭建流程</a><ul>
-<li><a href="#github-repo">Github Repo</a></li>
-<li><a href="#安装hexo">安装Hexo</a></li>
-<li><a href="#安装过程中的问题">安装过程中的问题</a><ul>
-<li><a href="#dtrace-错误-mac-os-x">DTrace 错误 （Mac OS X）</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#初始化博客">初始化博客</a></li>
-<li><a href="#站点配置">站点配置</a></li>
-<li><a href="#主题设置">主题设置</a><ul>
-<li><a href="#安装主题">安装主题</a></li>
-<li><a href="#设定主题">设定主题</a></li>
-<li><a href="#更新主题">更新主题</a></li>
-<li><a href="#主题参数">主题参数</a></li>
-</ul>
-</li>
-<li><a href="#本地服务器">本地服务器</a></li>
-<li><a href="#开篇宣言">开篇宣言</a><ul>
-<li><a href="#新建博客">新建博客</a></li>
-<li><a href="#front-matter">Front-matter</a></li>
-<li><a href="#markdown">markdown</a></li>
-<li><a href="#预览博客效果">预览博客效果</a></li>
-</ul>
-</li>
-<li><a href="#部署">部署</a><ul>
-<li><a href="#安装git部署插件">安装Git部署插件</a></li>
-<li><a href="#插件配置">插件配置</a></li>
-<li><a href="#部署发布">部署发布</a><ul>
-<li><a href="#生成静态文件">生成静态文件</a></li>
-<li><a href="#推送git">推送Git</a></li>
-<li><a href="#简化命令">简化命令</a></li>
-<li><a href="#缓存清楚">缓存清楚</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="#插件">插件</a><ul>
-<li><a href="#hexo-generator-json-content">hexo-generator-json-content</a></li>
-<li><a href="#hexo-filter-github-emojis">hexo-filter-github-emojis</a></li>
-<li><a href="#hexo-filter-flowchart">hexo-filter-flowchart</a></li>
-<li><a href="#hexo-filter-sequence">hexo-filter-sequence</a></li>
-</ul>
-</li>
-<li><a href="#写在最后">写在最后</a><ul>
-<li><a href="#定制化">定制化</a></li>
-<li><a href="#关于评论">关于评论</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>　　人们总是在不知不觉中悄然的成长和老去, 有喜有悲。或多或少你都存在一些人生的感悟, 生活的、工作的、感情的感悟。照相机的存在是因为人们想保留住喜或悲的那一刹, 博客的存在帮助人们记录下感悟的瞬间并分享给更多的人。<br>　　予人玫瑰,手留余香。</p>
+        <h1 id="引子"><a href="#引子" class="headerlink" title="引子"></a>引子</h1><p>　　人们总是在不知不觉中悄然的成长和老去, 有喜有悲。或多或少你都存在一些人生的感悟, 生活的、工作的、感情的感悟。照相机的存在是因为人们想保留住喜或悲的那一刹, 博客的存在帮助人们记录下感悟的瞬间并分享给更多的人。<br>　　予人玫瑰,手留余香。</p>
 <h1 id="why-hexo"><a href="#Why-hexo" class="headerlink" title="Why hexo ?"></a>Why hexo ?</h1><p>　　这里主要拿Hexo跟jekyll做一下对比, 两者都是可以将博客托管在github上的, 并且都是很好的博客引擎, 这里主要说一下个人选择时的考虑。</p>
 <h3 id="区别"><a href="#区别" class="headerlink" title="区别"></a>区别</h3><h4 id="jekyll"><a href="#Jekyll" class="headerlink" title="Jekyll"></a><a href="https://jekyllrb.com/" target="_blank" rel="external">Jekyll</a></h4><p>　　1. jekyll采用的是ruby语言支持的, ruby在windows环境下容易出乱子。(mac用户的我没有这个体会)<br>　　2. jekyll是将blog的整体托管在github上, 这本没有什么的。但玩博客的朋友都会挑选一个主题使博客更加美观。往往这些主题为了满足大多数人的喜好会做的比较厚重。在首次下载主题 &amp; 托管github时耗时严重, <strong>强迫症</strong> 卒。<br>　　3. jekyll的主题总得来说相对hexo颜值稍逊色, 纯个人观点, 不喜欢憋着。</p>
 <h4 id="hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a></h4><p>　　1. hexo采用的是node.js, 在跨平台上相较于ruby更有优势<br>　　2. hexo在本地写作, 简单命令快速的生成静态文件(纯html css js), 配置后同时推送到github。区别与jekyll的整站托管更加轻巧灵活。当然有的瓜皮要说hexo只托管了静态文件, 一但本地博客文件夹丢失、误删或者其他无法恢复的厄运面前, 你一定会为丢了博客石乐志(失了智)。我个人将md文件单独托管github, 也是一种办法, 哇 这就很开心。<br>　　3. hexo的主题与插件相对来说更加美观和方便使用。这一点可以看看<a href="https://hexo.io/" target="_blank" rel="external">hexo官网</a>。</p>
@@ -337,10 +273,6 @@ var _hmt = _hmt || [];
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">hexo</a>
         		</li>
       		 
@@ -350,6 +282,10 @@ var _hmt = _hmt || [];
       		 
         		<li class="article-tag-list-item">
         			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">jekyll</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">markdown</a>
         		</li>
       		
 		</ul>
@@ -688,22 +624,6 @@ MathJax.Hub.Queue(function() {
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">hello</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">post</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">new</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">hexo</a>
               </li>
              
@@ -713,6 +633,22 @@ MathJax.Hub.Queue(function() {
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color2">jekyll</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">markdown</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">hello</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">post</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">new</a>
               </li>
             
             <div class="clearfix"></div>
