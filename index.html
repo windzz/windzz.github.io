@@ -55,7 +55,7 @@ var _hmt = _hmt || [];
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="/assets/blogImg/windzz4.png" class="js-avatar">
+			<img src="/assets/blogImg/windzz.png" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/">Windzz</a></h1>
@@ -109,7 +109,7 @@ var _hmt = _hmt || [];
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="/assets/blogImg/windzz4.png" class="js-avatar">
+				<img src="/assets/blogImg/windzz.png" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author">Windzz</h1>
@@ -154,46 +154,168 @@ var _hmt = _hmt || [];
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-docs/15344077677423" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-linux/cmd-study" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/01/linux/cmd-study/">命令学习</a>
+    </h1>
+  
+
+        
+        <a href="/2018/12/01/linux/cmd-study/" class="archive-article-date">
+  	<time datetime="2018-11-30T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-12-01</time>
+</a>
+        
+      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="欢迎使用-MWeb"><a href="#欢迎使用-MWeb" class="headerlink" title="欢迎使用 MWeb"></a>欢迎使用 MWeb</h1><p>MWeb 是专业的 Markdown 写作、记笔记、静态博客生成软件，目前已支持 Mac，iPad 和 iPhone。MWeb 有以下特色：</p>
-<h2 id="软件本身："><a href="#软件本身：" class="headerlink" title="软件本身："></a>软件本身：</h2><ul>
-<li>使用原生的 macOS 技术打造，追求与系统的完美结合。</li>
-<li>原则上，首先是追求界面简洁和高性能，然后才是强大易用，功能全面。</li>
+        <h3 id="命令学习"><a href="#命令学习" class="headerlink" title="命令学习"></a>命令学习</h3><h4 id="init"><a href="#init" class="headerlink" title="init"></a>init</h4><ul>
+<li>init 0 关机</li>
+<li>init 3 最小化运行</li>
+<li>init 5 图形界面运行</li>
+<li>init 6 重启</li>
 </ul>
-<h2 id="Markdown-语法："><a href="#Markdown-语法：" class="headerlink" title="Markdown 语法："></a>Markdown 语法：</h2><ul>
-<li>使用 Github Flavored Markdown 语法，简称 GFM 语法。</li>
-<li>支持表格、TOC、LaTeX、代码块、任务列表、脚注等。</li>
-<li>画图库支持 mermaid, viz, echarts, plantuml, sequence, flow。</li>
+<h4 id="runlevel"><a href="#runlevel" class="headerlink" title="runlevel"></a>runlevel</h4><blockquote>
+<p>查看当前系统运行级别，如init设置的 0 、3 、5、 6</p>
+</blockquote>
+<h4 id="lsblk"><a href="#lsblk" class="headerlink" title="lsblk"></a>lsblk</h4><blockquote>
+<p>查看块设备</p>
+</blockquote>
+<h4 id="hostname"><a href="#hostname" class="headerlink" title="hostname"></a>hostname</h4><blockquote>
+<p>查看当前系统的hostname</p>
+</blockquote>
+<h4 id="date"><a href="#date" class="headerlink" title="date"></a>date</h4><blockquote>
+<p>时间查看和设置命令</p>
+</blockquote>
+<h4 id="nptdate"><a href="#nptdate" class="headerlink" title="nptdate"></a>nptdate</h4><blockquote>
+<p>同步设定指定IP机器的时间到本机 <code>nptdate IP</code></p>
+</blockquote>
+<h4 id="alias"><a href="#alias" class="headerlink" title="alias"></a>alias</h4><blockquote>
+<p>别名设置；别名优先于外部命令和内部命令执行<br>举例ls</p>
+</blockquote>
+<h4 id="bin与sbin的区别"><a href="#bin与sbin的区别" class="headerlink" title="bin与sbin的区别"></a>bin与sbin的区别</h4><blockquote>
+<p>bin下的命令普通用户可以使用<br>sbin下的命令是给管理用户使用的 root</p>
+</blockquote>
+<h4 id="cd"><a href="#cd" class="headerlink" title="cd"></a>cd</h4><blockquote>
+<p>切换目录</p>
+<ul>
+<li>cd 回到当前用户的家目录</li>
+<li>cd - 回到刚才工作的目录, <code>cd -</code>的工作机制是使用<code>$OLDPWD</code>变量存储的值</li>
 </ul>
-<h2 id="Markdown-辅助："><a href="#Markdown-辅助：" class="headerlink" title="Markdown 辅助："></a>Markdown 辅助：</h2><ul>
-<li>支持截图并粘贴、复制并粘贴、拖拽等方式插入图片并直接显示在编辑器内。</li>
-<li>在兼容 Markdown 语法的情况下支持设置图片宽度。</li>
-<li>好用的表格插入和 LaTeX 书写辅助。</li>
+</blockquote>
+<h4 id="pwd"><a href="#pwd" class="headerlink" title="pwd"></a>pwd</h4><blockquote>
+<p>展示当前所在目录的完整路径，<code>pwd</code>的工作机制是使用<code>$PWD</code>变量记录的值</p>
+</blockquote>
+<h4 id="系统常量"><a href="#系统常量" class="headerlink" title="系统常量"></a>系统常量</h4><ul>
+<li>PS1</li>
+<li>PATH</li>
+<li>PWD</li>
+<li>OLDPWD</li>
+<li>HISTSIZE</li>
+<li>SHELL</li>
 </ul>
-<h2 id="Markdown-输出："><a href="#Markdown-输出：" class="headerlink" title="Markdown 输出："></a>Markdown 输出：</h2><ul>
-<li>支持导出为图片、HTML、Epub、PDF、RTF、Docx。</li>
-<li>支持发布到 Wordrpess、支持 Metaweblog API 协议的服务、Wordpress.com、印象笔记（Evernote）、Blogger、Medium、Tumblr。</li>
-<li>图片上传服务（图床）支持 Google Photos、Imgur、七牛云、又拍云和自定义的图床服务。</li>
+<h4 id="shutdown"><a href="#shutdown" class="headerlink" title="shutdown"></a>shutdown</h4><blockquote>
+<p>关机重启命令 -r -c等参数使用</p>
+</blockquote>
+<h4 id="ls"><a href="#ls" class="headerlink" title="ls"></a>ls</h4><blockquote>
+<p>查看命令</p>
+<ul>
+<li>ls –time=atime  access time 查看和使用时间</li>
+<li>ls –time=ctime  change status time 文件状态变更时间</li>
+<li>ll 命令本身罗列的时间为文件的修改时间</li>
+<li>ls -d罗列目录本身 <code>ls -d */</code> 可以罗列当前目录下的所有目录</li>
 </ul>
-<h2 id="Markdown-笔记："><a href="#Markdown-笔记：" class="headerlink" title="Markdown 笔记："></a>Markdown 笔记：</h2><ul>
-<li>强大的文档库支持分类树和标签管理文档，文档可归类于多个分类，可以把分类整个导出为 Epub、PDF 和生成静态网站。非常合适用于笔记、个人知识收集、管理和输出。</li>
-<li>快速笔记：随意增加笔记及图片等素材，支持以天为单位把增加的素材组合在一个文档内，方便整理及记录历史收集情况。</li>
-<li>快速搜索：目前已支持全局快捷键调出搜索。</li>
+</blockquote>
+<h4 id="stat"><a href="#stat" class="headerlink" title="stat"></a>stat</h4><blockquote>
+<p>一次性查看文件的三个时间</p>
+</blockquote>
+<p><img src="http://note.youdao.com/yws/res/5779/CD1068A6AAB74D439137ECCC974A493D" alt="image"></p>
+<h4 id="cp"><a href="#cp" class="headerlink" title="cp"></a>cp</h4><blockquote>
+<p>复制命令</p>
+<ul>
+<li>root用户和非root用户使用的cp命令区分；root使用的是别名 <code>cp -i</code>， 非root用户使用的是<code>cp</code>原始命令<br><code>cp -i</code> 当cp命令的目标文件存在时，提示是否覆盖</li>
+<li><code>cp --backup=numbered</code> 当目标已经存在时，自动备份旧的文件，数字后缀</li>
+<li><code>cp -a</code> 复制，原样copy 备份文件常用</li>
+<li><code>cp /etc/hosts{,.bak}</code> 简写备份文件</li>
 </ul>
-<h2 id="外部-Markdown-文档："><a href="#外部-Markdown-文档：" class="headerlink" title="外部 Markdown 文档："></a>外部 Markdown 文档：</h2><ul>
-<li>外部 Markdown 文档使用外部模式管理。外部模式使用目录树的方式编辑和管理你的 markdown 文档，还能很好的支持 gitbook、JekyII、hexo 等等编辑和图片插入。</li>
+</blockquote>
+<h4 id="rename"><a href="#rename" class="headerlink" title="rename"></a>rename</h4><blockquote>
+<p>批量修改名称</p>
+<ul>
+<li><code>rename &#39;要修改name string&#39; &#39;修改后的name string&#39; file</code></li>
+<li>举例：<code>rename &#39;conf&#39; &#39;conf.bak&#39; file*</code>将file开头的文件conf全部替换为conf.bak</li>
 </ul>
-<h2 id="MWeb-文档："><a href="#MWeb-文档：" class="headerlink" title="MWeb 文档："></a>MWeb 文档：</h2><p>如果要更详细了解 MWeb，建议你一定要去看一下官网的帮助文档，网址为：<a href="https://zh.mweb.im/help.html" target="_blank" rel="noopener">https://zh.mweb.im/help.html</a>。我们建议在使用文档库之前，一定要阅读一下  <a href="https://zh.mweb.im/mweb-library.html" target="_blank" rel="noopener">MWeb 文档库详细介绍</a> 这篇文章，以便更好的使用文档库。</p>
-<h2 id="帮助我们改进-MWeb"><a href="#帮助我们改进-MWeb" class="headerlink" title="帮助我们改进 MWeb"></a>帮助我们改进 MWeb</h2><p>如果你喜欢 MWeb，想让它变得更好，你可以：</p>
-<ol>
-<li>推荐 MWeb，让更多的人知道。</li>
-<li>给我们发反馈和建议：<a href="mailto:&#99;&#111;&#100;&#x65;&#x72;&#102;&#x6f;&#114;&#97;&#x72;&#116;&#43;&#x32;&#51;&#51;&#x33;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109;" target="_blank" rel="noopener">&#99;&#111;&#100;&#x65;&#x72;&#102;&#x6f;&#114;&#97;&#x72;&#116;&#43;&#x32;&#51;&#51;&#x33;&#x40;&#x67;&#x6d;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a></li>
-<li>在 Mac App Store 上评价 （如果是在 MAS 上购买的话）。</li>
-</ol>
+</blockquote>
+<h4 id="mv"><a href="#mv" class="headerlink" title="mv"></a>mv</h4><blockquote>
+<p>移动文件 or 目录</p>
+<ul>
+<li><code>mv -i</code>同<code>cp -i</code> root用户使用的是别名命令</li>
+<li><code>mv -t 目标 源</code> 可以做成rm的别名，避免误删除</li>
+</ul>
+</blockquote>
+<h4 id="rm"><a href="#rm" class="headerlink" title="rm"></a>rm</h4><blockquote>
+<p>删除文件 or 目录</p>
+<ul>
+<li><code>rm -i</code> 参考cp mv</li>
+<li>删除大文件可以使用<code>&gt; bigfile</code> 并释放空间，避免其他进程占用此文件时，无法立即释放空间</li>
+</ul>
+</blockquote>
+<h4 id="alias-unalias"><a href="#alias-unalias" class="headerlink" title="alias unalias"></a>alias unalias</h4><ul>
+<li><code>alias</code>添加别名</li>
+<li><code>unalias</code>删除别名</li>
+<li>长久保存别名，请修改.bashrc文件</li>
+</ul>
+<h4 id="tree"><a href="#tree" class="headerlink" title="tree"></a>tree</h4><blockquote>
+<p>展示目录结构树</p>
+<ul>
+<li><code>tree -L 1</code> 展示一层</li>
+<li><code>tree -d</code>只展示目录</li>
+</ul>
+</blockquote>
+<h4 id="mkdir"><a href="#mkdir" class="headerlink" title="mkdir"></a>mkdir</h4><blockquote>
+<p>创建目录</p>
+<ul>
+<li><code>mkdir -p</code> 递归创建目录<br>举例：<code>mkdir -p /data/testdir/{x..y}/{a..b}</code><br>举例：<code>mkdir -p /data/testdir/dir{3,4,5/dir{6,7}}</code></li>
+</ul>
+</blockquote>
+<h4 id="xargs"><a href="#xargs" class="headerlink" title="xargs"></a>xargs</h4><ul>
+<li><code>echo file{1,500000} | xargs touch</code> 创建50W个文件</li>
+</ul>
+<h4 id="inode"><a href="#inode" class="headerlink" title="inode"></a>inode</h4><blockquote>
+<p>文件节点编号; 文件节点编号的作用范围为磁盘分区，即不同磁盘分区节点编号会重复</p>
+</blockquote>
+<ul>
+<li><p><code>df -i</code> 查看系统磁盘分区可用的节点编号<br><img src="http://note.youdao.com/yws/res/5839/18E0E68BBFF3491A99DDACD55EB9C2F9" alt="image"></p>
+</li>
+<li><p><code>ls -i</code> 查看文件的节点编号<br><img src="http://note.youdao.com/yws/res/5860/997FF1AD2F164849AABDC8FE6CC1507C" alt="image"></p>
+</li>
+</ul>
+<h4 id="shared"><a href="#shared" class="headerlink" title="shared"></a>shared</h4><blockquote>
+<p>删除文件</p>
+<ul>
+<li><code>shared -zvu file</code> 彻底删除，基本无法恢复;<br>删除机制，重复用随机数覆盖文件内容，最后删除文件</li>
+</ul>
+</blockquote>
+<h4 id="软、硬链接区别"><a href="#软、硬链接区别" class="headerlink" title="软、硬链接区别"></a>软、硬链接区别</h4><ul>
+<li>本质区别<ul>
+<li>硬链接，同一个文件，不同名字</li>
+<li>软连接，一个文件对应款姐方式，不同文件</li>
+</ul>
+</li>
+<li>链接数</li>
+<li>跨分区</li>
+<li>目录</li>
+<li>原始和链接文件的关系</li>
+<li>删除</li>
+</ul>
+<h4 id="readlink"><a href="#readlink" class="headerlink" title="readlink"></a>readlink</h4><blockquote>
+<p>读取链接原始文件</p>
+</blockquote>
 
       
 
@@ -206,7 +328,7 @@ var _hmt = _hmt || [];
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/08/16/docs/15344077677423/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/12/01/linux/cmd-study/">展开全文 >></a>
         </p>
       
 
